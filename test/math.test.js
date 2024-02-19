@@ -38,3 +38,19 @@ for (let i = 0; i < max; i++) {
     expect(divide(a, b)).toBe(res);
   });
 }
+
+for (let i = 0; i < max; i++) {
+  let a = Math.random() * max;
+  let res = a * a;
+  test(`Power of ${a} equals ${res}`, () => {
+    expect(power(a)).toBe(res);
+  });
+}
+
+for (let i = 0; i < max; i++) {
+  let a = Math.random() * max;
+  let res = Math.sqrt(a);
+  test(`Square of ${a} equals ${res}`, () => {
+    expect(square(a)).toBe(res);
+  });
+}
