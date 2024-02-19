@@ -1,4 +1,4 @@
-import { add, soustract, multiply, divide, power, square } from "../src/math";
+import { add, soustract, multiply, divide } from "../src/math";
 import { test, expect } from "vitest";
 
 test(`Adds 1 + 2 equals 3`, () => {
