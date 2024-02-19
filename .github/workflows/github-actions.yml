@@ -7,24 +7,13 @@ jobs:
     steps:
       - name: Initialiser un repo git
         run: git init
-
       - name: Faire un chemin
         run: git remote add origin https://github.com/quemet/Vitest.git
-        
       - name: Prendre le code présent sur le repo
         run: git pull origin main
-
       - name: Installe les dépendances
         run: npm install
-
       - name: run les tests avec vitest
-        run: npm run test -- --junit-report=vitest-report.xml
-        
+        run: npm run test
       - name: Message de confirmation
         run: echo "Tout c'est bien passé"
-
-      - name: Save test report as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-results
-          path: vitest-report.xml
