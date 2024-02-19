@@ -1,11 +1,8 @@
 import { add, soustract, multiply, divide } from "../src/math";
 import { test, expect } from "vitest";
 
-let a = Math.random() * max;
-let b = Math.random() * max;
-let res = a + b;
-test(`Adds ${a} + ${b} equals ${res}`, () => {
-  expect(add(a, b)).toBe(res);
+test(`Adds 1 + 2 equals 3`, () => {
+  expect(add(1, 2)).toBe(3);
 });
 
 for (let i = 0; i < max; i++) {
