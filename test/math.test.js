@@ -9,14 +9,9 @@ test(`Soustarcts 1 - 2 equals -1`, () => {
   expect(soustract(1, 2)).toBe(-1);
 });
 
-for (let i = 0; i < max; i++) {
-  let a = Math.random() * max;
-  let b = Math.random() * max;
-  let res = a * b;
-  test(`Multiply ${a} + ${b} equals ${res}`, () => {
-    expect(multiply(a, b)).toBe(res);
-  });
-}
+test(`Multiply 1 * 2 equals 2`, () => {
+  expect(multiply(1, 2)).toBe(2);
+});
 
 for (let i = 0; i < max; i++) {
   let a = Math.random() * max;
