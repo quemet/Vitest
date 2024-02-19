@@ -1,4 +1,13 @@
 {
+  "name": "vitest",
+  "version": "1.0.0",
+  "description": "Example of project with vitest and GitHub Actions",
+  "main": "src/math.js",
+  "scripts": {
+    "test": "test/math.test.js"
+  },
+  "author": "QMZ",
+  "license": "ISC",
   "dependencies": {
     "vitest": "^1.3.0"
   }
