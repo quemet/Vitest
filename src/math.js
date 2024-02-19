@@ -8,4 +8,4 @@ export const divide = (a, b) => a / b;
 
 export const power = a => a * a;
 
-export const square = a => Math.sqrt(a)
+export const square = a => Math.sqrt(a);
