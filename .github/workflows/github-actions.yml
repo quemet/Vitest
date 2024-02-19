@@ -8,5 +8,6 @@ jobs:
       - run: git init
       - run: git remote add origin https://github.com/quemet/Vitest.git
       - run: git pull origin main
+      - run: npm install
       - run: npm run test
       - run: echo "Hello"
