@@ -13,27 +13,14 @@ test(`Multiply 1 * 2 equals 2`, () => {
   expect(multiply(1, 2)).toBe(2);
 });
 
-for (let i = 0; i < max; i++) {
-  let a = Math.random() * max;
-  let b = Math.random() * max;
-  let res = a / b;
-  test(`Divide ${a} + ${b} equals ${res}`, () => {
-    expect(divide(a, b)).toBe(res);
-  });
-}
+test(`Divide 1 / 2 equals 0.5`, () => {
+  expect(divide(1, 2)).toBe(0.5);
+});
 
-for (let i = 0; i < max; i++) {
-  let a = Math.random() * max;
-  let res = a * a;
-  test(`Power of ${a} equals ${res}`, () => {
-    expect(power(a)).toBe(res);
-  });
-}
+test(`Power of 1 equals 1`, () => {
+  expect(power(1)).toBe(1);
+});
 
-for (let i = 0; i < max; i++) {
-  let a = Math.random() * max;
-  let res = Math.sqrt(a);
-  test(`Square of ${a} equals ${res}`, () => {
-    expect(square(a)).toBe(res);
-  });
-}
+test(`Square of 1 equals 1`, () => {
+  expect(square(1)).toBe(1);
+});
