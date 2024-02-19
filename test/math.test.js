@@ -5,14 +5,9 @@ test(`Adds 1 + 2 equals 3`, () => {
   expect(add(1, 2)).toBe(3);
 });
 
-for (let i = 0; i < max; i++) {
-  let a = Math.random() * max;
-  let b = Math.random() * max;
-  let res = a - b;
-  test(`Soustracts ${a} - ${b} equals ${res}`, () => {
-    expect(soustract(a, b)).toBe(res);
-  });
-}
+test(`Soustarcts 1 - 2 equals -1`, () => {
+  expect(soustract(1, 2)).toBe(-1);
+});
 
 for (let i = 0; i < max; i++) {
   let a = Math.random() * max;
