@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
   Explore-GitHub-Actions:
-    runs-on: windows10-latest
+    runs-on: windows-latest
     steps:
       - run: git init
       - run: git remote add origin https://github.com/quemet/Vitest.git
