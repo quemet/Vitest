@@ -27,4 +27,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: test-results
-          path: path/to/vitest-report.xml
+          path: vitest-report.xml
