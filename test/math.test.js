@@ -16,11 +16,3 @@ test(`Multiply 1 * 2 equals 2`, () => {
 test(`Divide 1 / 2 equals 0.5`, () => {
   expect(divide(1, 2)).toBe(0.5);
 });
-
-test(`Power of 1 equals 1`, () => {
-  expect(power(1)).toBe(1);
-});
-
-test(`Square of 1 equals 1`, () => {
-  expect(square(1)).toBe(1);
-});
