@@ -6,4 +6,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: git init
+      - run: git remote add origin 
       - run: echo "Hello"
