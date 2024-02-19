@@ -1,7 +1,7 @@
 import { add, soustract, multiply, divide } from "../src/math";
 import { test, expect } from "vitest";
 
-test(`Adds 1 + 2 equals 3`, function hello() => {
+test(`Adds 1 + 2 equals 3`, () => {
   expect(add(1, 2)).toBe(3);
 });
 
