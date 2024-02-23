@@ -5,6 +5,9 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
       - name: Prendre le code en local
         run: git clone https://github.com/quemet/Vitest.git
       - name: Revenir dans le dossier parent
