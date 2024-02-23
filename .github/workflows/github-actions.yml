@@ -7,8 +7,6 @@ jobs:
     steps:
       - name: Prendre le code en local
         run: git clone https://github.com/quemet/Vitest.git
-      - name: Se rendre dans le dossier
-        run: cd Vitest
       - name: Installe les dépendances
         run: npm install
       - name: run les tests avec vitest
