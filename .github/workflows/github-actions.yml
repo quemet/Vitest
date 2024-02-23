@@ -13,6 +13,6 @@ jobs:
       - name: Installe les dépendances
         run: npm install
       - name: run les tests avec vitest
-        run: npm test
+        run: npm run test
       - name: Message de confirmation
         run: echo "Tout c'est bien passé"
