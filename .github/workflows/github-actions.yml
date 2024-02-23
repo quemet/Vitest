@@ -5,12 +5,8 @@ jobs:
   Explore-GitHub-Actions:
     runs-on: windows-latest
     steps:
-      - name: Initialiser un repo git
-        run: git init
-      - name: Faire un chemin
-        run: git remote add origin https://github.com/quemet/Vitest.git
-      - name: Prendre le code présent sur le repo
-        run: git pull origin main
+      - name: Prendre le code en local
+        run: git clone https://github.com/quemet/Vitest.git
       - name: Installe les dépendances
         run: npm install
       - name: run les tests avec vitest
